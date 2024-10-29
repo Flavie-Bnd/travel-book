@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+body {
+    margin : 0 auto;
+    padding: 0;
+    background-color: var(--background-color-one);
+}
+
+/* VARIABLE -------------------------------------------------------------------------------------------------------- */
+:root{
+    --primary-color: #fff;
+    --font-size-large: 2em;
+    --font-size-text: 20px;
+    --background-color-one: #0d4a80;
+    --background-color-two: #042645;
+    --hover: #C7D93D;
+}
+
+/* GENERAL CSS ------------------------------------------------------------------------------------------------------- */
+
+.shadows-into-light-regular {
+    font-family: "Shadows Into Light";
+}
+.open-sans {
+    font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3, p, a, li {
+    color : var(--primary-color);
+    margin: 0;
+}
+
+h1, h2, h3{
+    font-family: "Shadows Into Light";
+    text-transform: uppercase;
+}
+
+h2, h3{
+    font-size: var(--font-size-large);
+}
+
+p, a, li {
+    font-family: "Open Sans";
+    font-size: var(--font-size-text);
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer
+}
+
+li{
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding : 12px;
+    cursor: pointer
+    
+}
+
+img{
+    max-width: 100%;
+}
+
+svg {
+    width: 25px;
+    height: 25px;
+    fill : #fff;
+    cursor: pointer
+}
+/* HEADER ------------------------------------------------------------------------------------------------------ */
+
+header { 
+    position: absolute;     
+    top: 0;                
+    left: 0;                 
+    width: 100%; 
+}
+
+header nav ul {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0;
+   padding: 10px;
+}
+
+/* HERO --------------------------------------------------------------------------------------------------------- */
+#hero{
+    display : flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background:linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(./ressources/imgs/backpack-mountain.jpg) fixed center/cover;
+    background-repeat: no-repeat; 
+    height: 100vh;
+    padding-top : 12%;
+}
+
+#hero h1{
+    font-size: 4em ;
+}
+
+#hero svg {
+    fill : var(--primary-color);
+    text-align: center;
+}
+
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scroll p{
+    margin-bottom: 16px;
+}
+
+/* PRESENTATION ------------------------------------------------------------------------ */
+#presentation {
+    display : flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    width: 60%;
+    height: 90vh;
+}
+
+#presentation p{
+    margin : 8% 0 12% 0;
+}
+.pictos{
+    display: flex;
+    flex-direction : row;
+}
+
+.pictos svg {
+    width: 70px;
+    height: 70px;
+}
+
+.passeport{
+    fill : #03a696;
+}
+.route{
+    fill : #f2b705
+}
+.panneaux{
+    fill : #c7d93d;
+}
+
+/* ETAPES ----------------------------------------------------------------------------- */
+
+#etapes{
+    display : flex;
+    flex-direction : column;
+    background-color: var(--background-color-two);
+}
+
+.destination {
+    display : flex;
+    flex-direction : row;
+}
+
+.destination img {
+    width: 40%;
+    height: auto;
+    margin : 0
+}
+
+.caledonie {
+    display : flex;
+    flex-direction : row-reverse;
+}
+
+.box {
+    padding: 6%;
+}
+
+.destination hr {
+    margin : 20px 0 15px 0;
+}
+
+/*  FOOTER ------------------------------------------------------------------------------ */
+
+.footer-container {
+    display : flex;
+    padding : 22px;
+}
+footer h3 {
+    margin-bottom: 22px;;
+}
+footer a{
+    font-size: 16px;
+}
+
+.contact {
+    display : flex;
+    flex-direction : column;
+    align-items : flex-start;
+}
+
+/* .arrow-back{
+    position : absolute;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    color : #ffffffa1;
+} */
+ 
+.reseaux{
+    text-align: center;
+}
+
+.reseaux a {
+    margin: 0 22px;
+    transition: color 0.3s ease;
+}
+
+.reseaux a:hover {
+    fill :  var(--hover);
+}
+
+.mentions {
+    border-top: 1px solid #ffffff6e;
+    text-align: center;
+    font-size: 0.8em;;
+}
