@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0 auto;
     padding: 0;
-  }
+}
 
 body {
     margin : 0 auto;
@@ -82,11 +82,11 @@ header {
 }
 
 header nav ul {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin: 0;
-   padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 10px;
 }
 
 /* HERO --------------------------------------------------------------------------------------------------------- */
@@ -166,6 +166,10 @@ header nav ul {
     flex-direction : row;
 }
 
+.destination h2{
+    display : inline-block;
+    margin-left: 14px;
+}
 .destination img {
     width: 40%;
     height: auto;
@@ -204,14 +208,6 @@ footer a{
     align-items : flex-start;
 }
 
-/* .arrow-back{
-    position : absolute;
-    bottom: 0;
-    width: 50px;
-    height: 50px;
-    color : #ffffffa1;
-} */
- 
 .reseaux{
     text-align: center;
 }
@@ -229,4 +225,21 @@ footer a{
     border-top: 1px solid #ffffff6e;
     text-align: center;
     font-size: 0.8em;;
+}
+
+/* SCROLL TO TOP -------------------------------------------------------------------- */
+
+.scroll {
+    position : relative;
+}
+.scroll-top{
+    position : absolute;
+    bottom: 60px;
+    right: 50px;
+}
+
+.scroll-top svg{
+    width: 50px;
+    height: 50px;
+    fill : #ffffff9d;
 }
